@@ -3,8 +3,8 @@ const app = express();
 const port = 3000;
 const Customer = require('./models/customer');
 
-app.get('/', (req, res) => {
-    //codigo 
+app.post('/', () => {
+    Customer.getCustomer();
 })
 
 app.listen(port, () =>{
